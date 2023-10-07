@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.hero {
+  height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  .hero-img {
+    background-color: wheat;
+    width: 40vw;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    height: 380px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    position: relative;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 48px 100px 0px;
+    z-index: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    img {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      object-fit: cover;
+    }
+  }
+  .hero-title {
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: 800;
+  }
+}

@@ -9,20 +9,26 @@
   <body>
     <header class="nav">
       <nav>
-        <ul>
-          <li><a href="3" class="nav-link">Home</a></li>
-          <li>STUDIO 44</li>
-          <li>Work with us</li>
+        <ul class="navbar">
+          <li class="hamburger-menu">
+            <span class="hamburger-span"></span>
+            <span class="hamburger-span"></span>
+          </li>
+          <li class="nav-link home"><a href="#">Home</a></li>
+          <li class="nav-link logo">STUDIO 44</li>
+          <li class="nav-link" id="navbar-cta">Work with us</li>
         </ul>
       </nav>
     </header>
     <main>
       <!--HERO -->
       <section class="hero">
-        <h1 class="hero-title">The Best Studio in Town !</h1>
-        <img src="#" class="hero-img" />
-        <p class="hero-text">Lorem ipsum dolor sit amet.</p>
-        <button class="hero-cta btn">CTA</button>
+        <h1 class="hero-title">The best studio in town</h1>
+        <div class="hero-row1">
+          <figure class="hero-img">
+            <img src="/assets/img/studio1.jpg" alt="studio" />
+          </figure>
+        </div>
       </section>
       <!--HERO -->
       <!--SECTION ABOUT -->
@@ -52,5 +58,6 @@
     <footer></footer>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
+    <script defer src="/assets/scripts/navbar.js"></script>
   </body>
 </html>

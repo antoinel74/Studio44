@@ -1,0 +1,43 @@
+.nav-link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.home {
+  display: none;
+  padding: 12px;
+  transition: all 0.15s ease-in-out;
+  &.active {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 600;
+    a {
+      color: white;
+      text-decoration: none;
+      transition: all 0.15s ease-in-out;
+    }
+  }
+  &:hover {
+    background-color: white;
+    color: black;
+    a {
+      color: black;
+    }
+  }
+}
+
+.logo {
+  display: none;
+}
+
+#navbar-cta {
+  font-weight: 500;
+  background-color: rgba(128, 128, 128, 0.127);
+  border-radius: 20px;
+  padding: 12px;
+  margin-right: 12px;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
