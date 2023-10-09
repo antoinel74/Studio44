@@ -4,9 +4,10 @@
 @import "/assets/style/base/fonts";
 @import "/assets/style/base/typo";
 
+@import "/assets/style/components/hamburger";
+@import "/assets/style/components/navlinks";
+@import "/assets/style/components/buttons";
+
 @import "/assets/style/layouts/hero";
 @import "/assets/style/layouts/navbar";
 @import "/assets/style/layouts/record";
-
-@import "/assets/style/components/hamburger";
-@import "/assets/style/components/navlinks";
