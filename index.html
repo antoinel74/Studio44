@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio 44 - Your Talent, Our Skills !</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Studio 44 - Your Talent, Our Skills !</title>
-</head>
+  <body>
+    <header class="nav">
+      <nav>
+        <ul class="navbar">
+          <li class="hamburger-menu">
+            <span class="hamburger-span"></span>
+            <span class="hamburger-span"></span>
+          </li>
+          <li class="nav-link home"><a href="#">Home</a></li>
+          <li class="nav-link logo">STUDIO 44</li>
+          <li class="nav-link" id="navbar-cta">Work with us</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--HERO -->
+      <section class="hero">
+        <h1 class="hero__title">
+          The Best <span class="highlight">Studio</span> In Town
+        </h1>
+        <div class="hero-container">
+          <figure class="hero__fig hero__fig--one">
+            <img
+              class="hero__img hero__img--one"
+              src="/assets/img/studio2.jpg"
+            />
+          </figure>
 
-<body>
-	<header class="nav">
-		<nav>
-			<ul class="navbar">
-				<li class="hamburger-menu">
-					<span class="hamburger-span"></span>
-					<span class="hamburger-span"></span>
-				</li>
-				<li class="nav-link home"><a href="#">Home</a></li>
-				<li class="nav-link logo">STUDIO 44</li>
-				<li class="nav-link" id="navbar-cta">Work with us</li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<!--HERO -->
-		<section class="hero">
-			<h1 class="hero__title">The Best Studio In Town</h1>
-			<div class="hero-container">
-				<figure class="hero__fig hero__fig--one">
-					<img class="hero__img hero__img--one" src="/assets/img/studio2.jpg" />
-				</figure>
-	
-				<figure class="hero__fig hero__fig--two">
-					<img class="hero__img hero__img--two" src="/assets/img/studio1.jpg" />
-				</figure>
-			</div>
-			<div class="hero-cta">
-				<button class="btn">Book a workshop</button>
-				<button class="btn">Learn more</button>
-			</div>
-		</section>
-	</main>
-	<footer></footer>
-	<div id="app"></div>
-	<script type="module" src="/main.js"></script>
-	<script defer src="/assets/scripts/navbar.js"></script>
-</body>
-
+          <figure class="hero__fig hero__fig--two">
+            <img
+              class="hero__img hero__img--two"
+              src="/assets/img/studio1.jpg"
+            />
+            <figcaption>
+              <button class="btn">Book a workshop</button>
+              <button class="btn">Learn more</button>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="hero-cta">
+          <button class="btn">Book a workshop</button>
+          <button class="btn">Learn more</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+    <script defer src="/assets/scripts/navbar.js"></script>
+  </body>
 </html>
