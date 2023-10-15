@@ -1,43 +1,37 @@
-body {
-  background-color: $bgColor;
+.hero {
+  margin: 0rem 5rem;
 }
 
 .hero-container {
   display: flex;
-  width: 100%;
+  gap: 2rem;
   margin-top: 2rem;
   overflow: hidden;
 }
 
 .hero__title {
   @include main-title;
-  margin-bottom: 3rem;
   color: $darkColor;
-  margin: 0 64px;
 }
+
 .hero__subtitle {
-  margin: 12px 68px;
   text-transform: uppercase;
 }
 
 .hero__fig {
   overflow: hidden;
-  height: 400px;
   position: relative;
-  filter: grayscale(100%);
   border-radius: 9px;
+  filter: grayscale(100%) contrast(110%);
 
   &--one {
     width: 60%;
-    margin-left: 64px;
-    margin-right: 12px;
-    aspect-ratio: 345/280;
+    aspect-ratio: 3/2;
   }
 
   &--two {
     width: 40%;
-    margin-right: 64px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 3/2;
   }
 }
 
@@ -51,30 +45,33 @@ body {
 
 .hero-cta {
   display: flex;
+  margin-top: 1rem;
   .hero-cta__btns {
     width: 60%;
-    margin-left: 64px;
-    margin-top: 12px;
   }
   .hero-cta__bio {
     width: 40%;
-    margin-right: 64px;
-    margin-left: 12px;
-    margin-top: 12px;
   }
 }
 
 .hero-cta__biocontent {
   text-transform: uppercase;
   text-align: center;
+  font-size: 0.9em;
   line-height: 1.2;
 }
 
 @media screen and (max-width: 768px) {
+  .hero {
+    margin: 0 1rem;
+  }
   .hero-container {
     display: none;
   }
   .hero-cta {
+    #learn-btn {
+      display: none;
+    }
     .hero-cta__bio {
       display: none;
     }

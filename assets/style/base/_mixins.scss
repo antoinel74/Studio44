@@ -1,6 +1,24 @@
 @mixin main-title {
-  font-size: 6rem;
+  font-size: clamp(3.5rem, 3vw + 3rem, 6rem);
   font-weight: 600;
+  margin-bottom: 1rem;
+  overflow-wrap: break-word;
   color: white;
   text-transform: uppercase;
+}
+
+@mixin section-title {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    display: block;
+    margin-right: 1rem;
+    width: 30vw;
+    height: 3px;
+    border-radius: 3px;
+    background-color: black;
+  }
 }

@@ -1,0 +1,38 @@
+.service__header {
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+  overflow: hidden;
+  height: 300px;
+  margin: 0 5rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.service__title {
+  position: absolute;
+  font-size: 5em;
+  font-weight: 600;
+  color: purple;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.service__fig {
+  position: relative;
+  overflow: hidden;
+  filter: grayscale(100%);
+  img {
+    width: 100%;
+    height: 100%;
+    background: red;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+  }
+}
+
+.service__plan-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}

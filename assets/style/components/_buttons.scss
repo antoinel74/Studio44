@@ -16,5 +16,9 @@
     border-color: $highColor;
     color: white;
     margin-right: 34px;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
   }
 }

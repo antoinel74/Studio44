@@ -1,0 +1,20 @@
+.about {
+  height: 100vh;
+  margin: 3rem 5rem;
+}
+
+.about__description {
+  font-size: clamp(5vw, 2vw, 8vw);
+  margin: 4vw 0;
+  font-weight: 600;
+}
+
+.section-title {
+  @include section-title;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    margin: 3rem 1rem;
+  }
+}
