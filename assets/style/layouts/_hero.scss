@@ -1,79 +1,77 @@
+body {
+  margin: 0 2rem;
+}
+
 .hero {
-  margin: 0rem 5rem;
-}
-
-.hero-container {
-  display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
-  overflow: hidden;
-}
-
-.hero__title {
-  @include main-title;
-  color: $darkColor;
-}
-
-.hero__subtitle {
-  text-transform: uppercase;
-}
-
-.hero__fig {
-  overflow: hidden;
-  position: relative;
-  border-radius: 9px;
-  filter: grayscale(100%) contrast(110%);
-
-  &--one {
-    width: 60%;
-    aspect-ratio: 3/2;
-  }
-
-  &--two {
-    width: 40%;
-    aspect-ratio: 3/2;
-  }
-}
-
-.hero__img {
-  position: absolute;
-  inset: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.hero-cta {
+  height: 80vh;
   display: flex;
-  margin-top: 1rem;
-  .hero-cta__btns {
-    width: 60%;
-  }
-  .hero-cta__bio {
-    width: 40%;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
   }
 }
 
-.hero-cta__biocontent {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 0.9em;
-  line-height: 1.2;
-}
+.hero__left {
+  z-index: 1;
+  width: 50%;
+  h1 {
+    white-space: nowrap;
+    font-size: clamp(3.5rem, -0.15rem + 8vw, 5.5rem);
+    span {
+      writing-mode: vertical-rl;
+      line-height: 0.9;
+    }
+    @media (max-width: 600px) {
+      white-space: normal;
+    }
+  }
+  p {
+    font-size: clamp(1.2rem, 0.45rem + 1.55vw, 1.45rem);
+    max-width: 85%;
+    padding: 6px;
+    margin: 1.5rem 0;
+    a {
+      color: black;
+      font-weight: 600;
+    }
+  }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    margin: 0 1rem;
+  @media (max-width: 600px) {
+    width: 100%;
   }
-  .hero-container {
-    display: none;
+}
+.hero__right {
+  width: 50%;
+  position: relative;
+  & img {
+    object-fit: cover;
+    width: 80%;
+    height: 100%;
+    border: 6px solid;
+    border-radius: 8px;
+    box-shadow: 12px 10px 0 black;
+    transition: all 0.2s linear;
+    &:hover {
+      transform: translateY(-12px);
+    }
   }
-  .hero-cta {
-    #learn-btn {
-      display: none;
-    }
-    .hero-cta__bio {
-      display: none;
-    }
+  &:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: -40px;
+    right: 55px;
+    background-image: linear-gradient(-45deg, transparent 15px, #111 15px),
+      linear-gradient(45deg, transparent 10px, #111 10px);
+    background-size: 10px 10px;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
   }
 }
