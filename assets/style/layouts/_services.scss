@@ -13,7 +13,7 @@
 .service__plan {
   width: 100%;
   cursor: pointer;
-  filter: grayscale(70%);
+  filter: grayscale(80%);
   transition: all 0.2s linear;
   &:hover {
     filter: grayscale(100%);
@@ -42,7 +42,7 @@
 // MOBILE
 @media screen and (max-width: 768px) {
   .service {
-    margin: 3rem 0rem;
+    margin: 7rem 0rem;
   }
   .service__plan-container {
     flex-direction: column;

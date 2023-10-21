@@ -1,15 +1,53 @@
+.contact {
+  padding: 3rem 0;
+}
+
 .contact__container {
+  margin-top: 4rem;
   display: flex;
   width: 100%;
+  font-weight: 300;
   .contact__info {
+    font-size: clamp(1.2rem, 0.45rem + 1.55vw, 1.45rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
-    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
     line-height: 1.5;
-    h3 {
-      font-size: 3rem; // CLAMP //
+    svg {
+      margin-right: 1rem;
+    }
+    a {
+      color: white;
+      text-decoration: none;
     }
   }
   .contact__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
     width: 50%;
+    margin-right: 2rem;
+    a {
+      font-size: 2rem;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__container {
+    flex-direction: column-reverse;
+    .contact__info {
+      width: 100%;
+      margin: 0 2rem;
+    }
+    .contact__form {
+      width: 100%;
+      margin-bottom: 4rem;
+    }
   }
 }
