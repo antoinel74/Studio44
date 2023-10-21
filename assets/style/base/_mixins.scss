@@ -8,8 +8,8 @@
 }
 
 @mixin section-title {
-  font-size: clamp(1.5rem, 2vw, 2rem);
-  font-weight: 400;
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  font-weight: 200;
   display: flex;
   align-items: center;
   &::before {
@@ -19,6 +19,6 @@
     width: 30vw;
     height: 3px;
     border-radius: 3px;
-    background-color: black;
+    background-color: white;
   }
 }

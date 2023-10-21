@@ -1,11 +1,17 @@
 @import "/assets/style/vendors/reset";
 @import "/assets/style/base/variables";
 @import "/assets/style/base/mixins";
-@import "/assets/style/base/fonts";
 
 @import "/assets/style/components/buttons";
+@import "/assets/style/components/faq";
+@import "/assets/style/components/slider";
 
 @import "/assets/style/layouts/navbar";
 @import "/assets/style/layouts/hero";
 @import "/assets/style/layouts/services";
 @import "/assets/style/layouts/about";
+@import "/assets/style/layouts/contact";
+
+body {
+  font-family: $mainFont;
+}

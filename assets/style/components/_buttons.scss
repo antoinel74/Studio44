@@ -1,59 +1,29 @@
 .btn {
   width: fit-content;
   display: inline-block;
-  font-weight: bold;
   background-color: transparent;
+  font-weight: 600;
   font-size: 1.2rem;
   border: 0;
-  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  color: black;
+  padding: 0.5rem 1.5rem;
   text-decoration: underline;
   cursor: pointer;
   transition: all 0.2s ease;
   &--brutal {
     background-color: white;
-    border: 3px solid;
-    border-radius: 8px;
-    box-shadow: 4px 5px 0 black;
+    border: 2px solid;
     &:hover {
       transform: translate(-3px, -3px);
-      box-shadow: 7px 8px 0 black;
     }
   }
 
   &--notbrutal {
+    color: white;
+    font-weight: 400;
     &:hover {
       transform: rotate(-3deg);
     }
   }
 }
-
-/* .hero__btns {
-  button {
-    width: fit-content;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: transparent;
-    border: 0;
-    padding: 0.7rem 1.5rem;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    &.brutal {
-      background-color: white;
-      border: 3px solid;
-      border-radius: 8px;
-      box-shadow: 4px 5px 0 black;
-      &:hover {
-        transform: translate(-3px, -3px);
-        box-shadow: 7px 8px 0 black;
-      }
-    }
-    &.notbrutal {
-      &:hover {
-        transform: rotate(-3deg);
-      }
-    }
-  }
-}
- */

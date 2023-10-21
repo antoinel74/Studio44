@@ -1,7 +1,7 @@
 .service__title {
   font-size: clamp(2.8rem, -0.15rem + 8vw, 5rem);
   text-align: end;
-  margin-top: 7rem;
+  margin-top: 3rem;
 }
 
 .service__plan-container {
@@ -13,10 +13,10 @@
 .service__plan {
   width: 100%;
   cursor: pointer;
-  filter: grayscale(80%);
+  filter: grayscale(70%);
   transition: all 0.2s linear;
   &:hover {
-    filter: none;
+    filter: grayscale(100%);
   }
   &--basic {
     width: 50%;
@@ -43,9 +43,6 @@
 @media screen and (max-width: 768px) {
   .service {
     margin: 3rem 0rem;
-  }
-  .service__title {
-    margin-top: 10rem;
   }
   .service__plan-container {
     flex-direction: column;
