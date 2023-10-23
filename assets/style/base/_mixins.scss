@@ -3,7 +3,7 @@
   font-weight: 600;
   margin-bottom: 1rem;
   overflow-wrap: break-word;
-  color: white;
+  color: $white;
   text-transform: uppercase;
 }
 
@@ -19,6 +19,6 @@
     width: 30vw;
     height: 3px;
     border-radius: 3px;
-    background-color: white;
+    background-color: $white;
   }
 }

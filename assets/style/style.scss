@@ -5,13 +5,12 @@
 @import "/assets/style/components/buttons";
 @import "/assets/style/components/faq";
 @import "/assets/style/components/slider";
-@import "/assets/style/components/form";
 
-@import "/assets/style/layouts/navbar";
-@import "/assets/style/layouts/hero";
-@import "/assets/style/layouts/services";
-@import "/assets/style/layouts/about";
-@import "/assets/style/layouts/contact";
+@import "/assets/style/sections/navbar";
+@import "/assets/style/sections/hero";
+@import "/assets/style/sections/services";
+@import "/assets/style/sections/about";
+@import "/assets/style/sections/contact";
 
 body {
   font-family: $mainFont;

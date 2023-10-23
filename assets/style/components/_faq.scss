@@ -39,7 +39,6 @@
   max-height: 0;
   font-weight: 300;
   overflow: hidden;
-  transition: max-height 1s ease;
   // font-size: CLAMP //
   @media screen and (max-width: 768px) {
     p {

@@ -15,10 +15,12 @@
   aspect-ratio: 9/16;
   filter: grayscale(70%);
   cursor: pointer;
+  transition: all 0.3s linear;
   img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
     position: absolute;
   }
   figcaption {
@@ -31,10 +33,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    transition: all 120ms ease;
+    opacity: 0;
   }
   &:hover {
     figcaption {
+      opacity: 100;
       display: block;
     }
   }
