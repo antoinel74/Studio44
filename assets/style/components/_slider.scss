@@ -16,30 +16,12 @@
   filter: grayscale(70%);
   cursor: pointer;
   transition: all 0.3s linear;
+  @include figCaption;
   img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     overflow: hidden;
     position: absolute;
-  }
-  figcaption {
-    text-align: center;
-    text-transform: uppercase;
-    position: absolute;
-    font-size: 3rem;
-    font-weight: 600; // CLAMP // ;
-    z-index: 5;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 120ms ease;
-    opacity: 0;
-  }
-  &:hover {
-    figcaption {
-      opacity: 100;
-      display: block;
-    }
   }
 }
