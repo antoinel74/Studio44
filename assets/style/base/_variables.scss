@@ -2,9 +2,10 @@
 
 // FONTS
 $mainFont: "Work Sans", sans-serif;
-/* $textSize: 
-$mediumSize: 
-$LargeSize:  */
+
+$normalFont: clamp(1rem, 0.45rem + 1.55vw, 1.2rem);
+$mediumFont: clamp(1.3rem, 2vw, 2rem);
+$bigFont: clamp(2.8rem, -0.15rem + 8vw, 5rem);
 
 // COLOR:
 $dark: black;

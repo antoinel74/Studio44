@@ -8,7 +8,7 @@
 }
 
 @mixin section-title {
-  font-size: clamp(1.3rem, 2vw, 2rem);
+  font-size: $mediumFont;
   font-weight: 200;
   display: flex;
   align-items: center;
@@ -29,12 +29,12 @@
     text-transform: uppercase;
     position: absolute;
     font-size: 3rem;
-    font-weight: 600; // CLAMP // ;
+    font-weight: 600;
     z-index: 5;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all 120ms ease;
+    transition: all 220ms ease;
     opacity: 0;
   }
   &:hover {
@@ -43,4 +43,10 @@
       display: block;
     }
   }
+}
+
+.sectionAlt__title {
+  font-size: $bigFont;
+  text-align: end;
+  margin-top: 3rem;
 }

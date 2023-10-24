@@ -3,22 +3,27 @@ footer {
   justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.539);
   margin: 0 2rem;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .footer__baseline {
   margin: 1rem 0;
+
   a {
     color: $white;
-    opacity: 0.7;
+    font-weight: 400;
     text-decoration: none;
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
 .footer__social {
   margin: 1rem 0;
   svg {
-    transition: all 0.1s ease;
+    transition: all 0.2s ease;
     cursor: pointer;
     opacity: 0.7;
     &:hover {

@@ -13,12 +13,12 @@
   }
   &.active {
     height: 100vh;
-    background-color: black;
+    background-color: $dark;
     display: flex;
     align-items: baseline;
     flex-direction: column;
     justify-content: start;
-    color: white;
+    color: $white;
     .btn {
       display: none;
     }
@@ -29,23 +29,22 @@
   text-decoration: none;
   display: none;
   cursor: pointer;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.2s ease-in-out;
   &.active {
     display: inline-block;
-    font-size: 2em;
-    font-weight: 600;
+    font-size: 4rem;
     a {
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-decoration: none;
-      color: white;
-      transition: all 0.15s ease-in-out;
+      color: $white;
+      transition: all 0.2s ease-in-out;
     }
   }
   &:hover {
-    background-color: white;
-    color: black;
+    background-color: $white;
+    color: $dark;
     a {
-      color: black;
+      color: $dark;
     }
   }
 }
@@ -62,17 +61,17 @@
     margin: 2px 0;
     width: 20px;
     height: 2px;
-    background-color: white;
+    background-color: $white;
     -webkit-transition: all 380ms ease-in-out;
     transition: all 380ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
   }
   &.active .hamburger-span:nth-child(1) {
     transform: translateY(3px) rotate(225deg);
-    background-color: white;
+    background-color: $white;
   }
   &.active .hamburger-span:nth-child(2) {
     transform: translateY(-3px) rotate(-225deg);
-    background-color: white;
+    background-color: $white;
   }
 }
 /* 
@@ -94,6 +93,6 @@
 } */
 
 body {
-  background-color: black;
-  color: white;
+  background-color: $dark;
+  color: $white;
 }
