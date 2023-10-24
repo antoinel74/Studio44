@@ -9,8 +9,11 @@
     margin: 1rem 2rem;
   }
   .btn {
+    font-weight: 400;
     font-size: 1rem;
+    text-decoration: none;
   }
+
   &.active {
     height: 100vh;
     background-color: $dark;
@@ -31,20 +34,32 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   &.active {
-    display: inline-block;
-    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 3.5rem;
     a {
-      padding: 2rem 1rem;
+      padding: 1rem 1rem;
       text-decoration: none;
       color: $white;
       transition: all 0.2s ease-in-out;
-    }
-  }
-  &:hover {
-    background-color: $white;
-    color: $dark;
-    a {
-      color: $dark;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $white;
+        transform-origin: bottom right;
+        z-index: 10;
+        transition: transform 0.25s ease-out;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
     }
   }
 }
@@ -74,25 +89,9 @@
     background-color: $white;
   }
 }
-/* 
-@media screen and (min-width: 768px) {
-  .nav-link {
-    display: block;
-    a {
-      text-decoration: none;
-      font-size: 1.2rem;
-      color: black;
-    }
-  }
-  .logo {
-    text-decoration: underline;
-  }
-  .hamburger-menu {
-    display: none;
-  }
-} */
 
 body {
   background-color: $dark;
   color: $white;
+  font-family: $mainFont;
 }
